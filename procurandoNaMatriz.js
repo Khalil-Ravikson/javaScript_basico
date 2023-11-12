@@ -5,10 +5,12 @@ const arrayDeDuasDimensoes = [sala,salaMedia];
 
 
 function exibeAlunoEMedia(aluno){
-if(arrayDeDuasDimensoes[0].includes(aluno)){ 
+// procura o aluno, retorna true para aluno igual ao parametro,false se for diferente
+    if(arrayDeDuasDimensoes[0].includes(aluno)){ 
     // const indice = arrayDeDuasDimensoes[0].indexOf(aluno);
-
+    // "Renomeia as variaveis da matriz"
     const [alunos, medias] = arrayDeDuasDimensoes;
+    // Me da o indice do array daquele aluno
     const indice = alunos.indexOf(aluno);
     const mediaDoAluno = medias[indice];
     console.log(`O Aluno -> ${aluno}, tem media -> ${mediaDoAluno}`)
